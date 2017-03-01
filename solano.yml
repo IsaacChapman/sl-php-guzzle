@@ -1,7 +1,7 @@
 tests:
   - type: phpunit
     mode: parallel
-    command: ./vendor/bin/phpunit --rerun-fatal-max-count 3
+    command: ./vendor/bin/solano-phpunit --rerun-fatal-max-count 3
     config: phpunit.xml
     files:
       - tests/**Test.php
@@ -9,7 +9,7 @@ php:
   php_version: "7.0"
 hooks:
   pre_setup: composer install
-  post_worker: cp $HOME/phpunit.*.json $HOME/results/$TDDIUM_SESSION_ID/session/
+  post_worker: cp $HOME/phpunit-*.json $HOME/results/$TDDIUM_SESSION_ID/session/
 cache:
   nocache: true
 environment:
