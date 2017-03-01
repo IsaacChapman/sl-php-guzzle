@@ -1,0 +1,23 @@
+{
+    "name": "sl-php-guzzle",
+    "homepage": "https://www.solanolabs.com/",
+    "keywords": [
+        "phpunit",
+        "testing",
+        "solano",
+        "parallel",
+        "concurrent",
+        "ci"
+    ],
+    "authors": [
+        {
+            "name": "Isaac Chapman",
+            "email": "isaac@solanolabs.com",
+            "role": "lead"
+        }
+    ],
+    "require": {
+        "solano/solano-phpunit": "dev-rerun_on_fatal_error_max_count",
+        "guzzle/guzzle": "^3.9"
+    }
+}
